@@ -1,0 +1,23 @@
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+
+# Data and outputs (the repo ships code only)
+data/
+out/
+results/
+*.pt
+*.npz
+*.png
+*.jsonl
+
+# Local environment overrides
+.env
+.env.local
+
+# Editor/IDE
+.vscode/
+.idea/
+*.swp
