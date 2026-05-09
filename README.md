@@ -13,12 +13,13 @@ That's the whole repo. ~1,020 lines of code. Two researcher knobs (axes panel + 
 
 ### Option A — share parent project's venv (fastest for development on this machine)
 
-The parent project at `/jumbo/lisp/fl1/assistant-axis-abliteration/` already has the assistant-axis library editable-installed in its venv. Use it directly:
+The parent project at `/jumbo/lisp/fl1/assistant-axis-abliteration/` already has the assistant-axis library editable-installed in its venv. Use it directly via the included `.envrc`:
 
 ```bash
-git clone https://github.com/pjcherian7/persona-space-comparison.git
+git clone git@github.com:pauljCherian/persona-space-comparison.git
 cd persona-space-comparison
-export PYTHON=/jumbo/lisp/fl1/assistant-axis-abliteration/.venv/bin/python
+source .envrc                # sets PYTHON + PHASE_H_DATA_ROOT
+# or, if you have direnv installed: `direnv allow .` (auto-loads on cd)
 ```
 
 That's it — no fresh install needed. Run scripts via `$PYTHON script.py`.
@@ -115,15 +116,17 @@ $PYTHON check_ready.py
 Exit 0 = ready, exit 1 = fix the listed issues first.
 
 ### 2. Pipeline (one model at a time)
-Runs vLLM generation + activation extraction + unfiltered vectors + axis + default. Args: HuggingFace model ID, output dir (under `$PHASE_H_DATA_ROOT`), extraction layer, hidden dim.
+Runs vLLM generation + activation extraction + unfiltered vectors + axis + default. Single positional arg: a tag from `configs/models.py`. The script reads the HF model ID, output path, extraction layer, and hidden dim from that config — single source of truth, no risk of layer mismatch.
 
 ```bash
-./pipeline.sh microsoft/Phi-3.5-mini-instruct $PHASE_H_DATA_ROOT/phi-3.5-mini 16 3072
-./pipeline.sh meta-llama/Llama-3.2-3B-Instruct $PHASE_H_DATA_ROOT/llama-3.2-3b 14 3072
-./pipeline.sh Qwen/Qwen2.5-3B-Instruct $PHASE_H_DATA_ROOT/qwen2.5-3b 18 2048
+./pipeline.sh phi
+./pipeline.sh llama
+./pipeline.sh qwen
 ```
 
 Cost per model: ~12–16 GPU-hours, ~50 GB output (mostly responses + activations). Steps are resume-safe (skips role files that already exist).
+
+To run on a model not in `configs/models.py`: add an entry to that file (or to a copy loaded via `PHASE_H_MODELS=alt_models.py`).
 
 ### 3. Analysis
 
@@ -187,7 +190,7 @@ Each deferred module's source code lives in the parent project at `/jumbo/lisp/f
 
 **Bootstrap CI bars look weird / inverted on the radar** — matplotlib polar plots fold negative `r` to the opposite spoke. The radar code uses `set_rorigin` to a value below the data minimum to render negatives correctly. If you customize the plot, preserve that.
 
-**Layer mismatch between `pipeline.sh` and `configs/models.py`** — the layer is declared twice: once as a positional CLI arg to `pipeline.sh` and once in `configs/models.py`. Mismatch will compute the wrong contrast (analysis reads from the layer that pipeline.sh extracted to). Keep them in sync; consider a wrapper script that pulls layer from the config.
+**Need to run a model not in `configs/models.py`** — `pipeline.sh` requires a tag from the config, which is the single source of truth for layer/hidden_dim/HF model ID/output path. To run a one-off model, add an entry to `configs/models.py` (or a copy loaded via `PHASE_H_MODELS=alt_models.py`) and run `./pipeline.sh <new_tag>`. There's no separate raw-args mode by design: the duplicate-source-of-truth bug is more dangerous than the friction of adding a config entry.
 
 ## Pushing to GitHub
 

@@ -66,7 +66,7 @@ The two parameters a researcher will tune most often live in dedicated, swappabl
    cp configs/axes.py configs/no_critic.py    # then edit
    PHASE_H_AXES=configs/no_critic.py python compute_axes.py --all
    ```
-2. **Model set + per-model metadata** — `configs/models.py`. Defines `MODELS: dict[str, dict]` with keys `path` (subdir under `$PHASE_H_DATA_ROOT`), `layer`, `hidden_dim`, `color`, `display`. Override the same way:
+2. **Model set + per-model metadata** — `configs/models.py`. Defines `MODELS: dict[str, dict]` with keys `model_id` (HuggingFace ID for vLLM in `pipeline.sh`), `path` (subdir under `$PHASE_H_DATA_ROOT`), `layer`, `hidden_dim`, `color`, `display`. Single source of truth — `pipeline.sh <tag>` reads everything from here, so layer/hidden_dim can never drift between pipeline and analysis. Override the same way:
    ```bash
    cp configs/models.py configs/abliterated_set.py    # edit
    PHASE_H_MODELS=configs/abliterated_set.py python bootstrap_radar.py
@@ -80,29 +80,29 @@ The third knob is data location: `PHASE_H_DATA_ROOT` (default `./data/`). Each m
 
 The repo is **code-only**. Per-model artifacts (responses, activations, vectors, axes, defaults, contrasts, projections) are produced by `pipeline.sh` and `compute_axes.py` into `$PHASE_H_DATA_ROOT/<model_path>/`.
 
-For development on this machine, the parent project's pre-computed activations are reused via:
+For development on this machine, the parent project's pre-computed activations are reused via the included `.envrc`:
 ```bash
-export PHASE_H_DATA_ROOT=/jumbo/lisp/fl1/assistant-axis-abliteration/results
+source .envrc
+# or with direnv installed: cd in, vars auto-load
 ```
-This avoids re-running the ~16 GPU-hour generation for each model. Existing per-model directories there contain `vectors_unfiltered/`, `default.pt`, etc.
+which sets `PYTHON` to the parent's venv and `PHASE_H_DATA_ROOT` to the parent's `results/`. This avoids re-running the ~16 GPU-hour generation for each model. Existing per-model directories there contain `vectors_unfiltered/`, `default.pt`, etc.
 
 The canonical artifacts are also published to HuggingFace at [`pandaman007/assistant-axis-abliteration-vectors`](https://huggingface.co/datasets/pandaman007/assistant-axis-abliteration-vectors) — not all keys map cleanly to this repo's conventions, but the vectors and defaults are there.
 
 ## Vendored library setup
 
-The new repo expects `assistant_axis` (Lu et al.'s Python library) to be importable. On this machine, the parent project's venv at `/jumbo/lisp/fl1/assistant-axis-abliteration/.venv/` already has it installed editably. For development, just use that:
-```bash
-export PYTHON=/jumbo/lisp/fl1/assistant-axis-abliteration/.venv/bin/python
-```
+The repo expects `assistant_axis` (Lu et al.'s Python library) to be importable. Two options:
 
-For a clean standalone setup (e.g., after pushing to GitHub and cloning fresh):
+**Development on lisplab** — the parent project's venv at `/jumbo/lisp/fl1/assistant-axis-abliteration/.venv/` already has it installed editably. Just `source .envrc` (or use direnv) and the included default `PYTHON` points there.
+
+**Clean standalone setup** (e.g., after cloning fresh elsewhere):
 ```bash
 python -m venv .venv && source .venv/bin/activate
 pip install -e git+https://github.com/safety-research/assistant-axis.git#egg=assistant-axis
 pip install -r requirements.txt
 ```
 
-The `pipeline.sh` script auto-discovers the library location from `assistant_axis.__file__`, so it works with any install method.
+`pipeline.sh` auto-discovers the library location from `assistant_axis.__file__`, so either install method works.
 
 ## Verification status
 

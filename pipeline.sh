@@ -1,41 +1,66 @@
 #!/bin/bash
-# Run the assistant-axis pipeline (no judge) for a single model.
-# Usage:
-#   ./pipeline.sh <hf_model_id> <output_dir> <layer> <hidden_dim>
-# Example:
-#   ./pipeline.sh microsoft/Phi-3.5-mini-instruct ./data/phi-3.5-mini 16 3072
+# Run the assistant-axis pipeline (no judge) for one model from configs/models.py.
 #
-# Steps:
+# Usage:
+#   ./pipeline.sh <model_tag>
+#
+#   <model_tag> is a key in configs/models.py (e.g. "phi", "llama", "qwen").
+#   All parameters (HF model_id, output dir, layer, hidden_dim) are read from
+#   that config — single source of truth, no risk of layer mismatch.
+#
+# Example:
+#   ./pipeline.sh phi
+#
+# Output goes to $PHASE_H_DATA_ROOT/<MODELS[tag]['path']>/.
+#
+# Steps (no judge):
 #   1. vLLM generation: 276 roles × 1200 rollouts → responses/<role>.jsonl
 #   2. Activation extraction at layer L → activations/<role>.pt
-#   3. (skipped — judge not needed; see DESIGN.md)
-#   4. Unfiltered role vectors (mean over all rollouts) → vectors/<role>.pt
-#   5. Lu-style assistant axis (mean(default) − mean(roles)) → axis.pt
-#   6. Default activation vector → default.pt
+#   3. Unfiltered role vectors (mean over all rollouts) → vectors/<role>.pt
+#   4. Lu-style assistant axis (mean(default) − mean(roles)) → axis.pt
+#   5. Default activation vector → default.pt
 set -euo pipefail
 
-if [ "$#" -lt 4 ]; then
-    echo "Usage: $0 <hf_model_id> <output_dir> <layer> <hidden_dim>" >&2
+if [ "$#" -lt 1 ]; then
+    echo "Usage: $0 <model_tag>" >&2
+    echo "       <model_tag> must be a key in configs/models.py" >&2
     exit 2
 fi
 
-MODEL_ID="$1"
-OUTPUT="$(realpath "$2")"
-LAYER="$3"
-HIDDEN_DIM="$4"
-
+TAG="$1"
 REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PYTHON="${PYTHON:-python}"
 
-# Locate the assistant-axis library (must be pip-installed editable, or available on path)
-PIPELINE_DIR="$($PYTHON -c 'import os, assistant_axis; print(os.path.dirname(os.path.dirname(assistant_axis.__file__)) + "/pipeline")')"
-ROLES_DIR="$($PYTHON -c 'import os, assistant_axis; print(os.path.dirname(os.path.dirname(assistant_axis.__file__)) + "/data/roles/instructions")')"
-QUESTIONS_FILE="$($PYTHON -c 'import os, assistant_axis; print(os.path.dirname(os.path.dirname(assistant_axis.__file__)) + "/data/extraction_questions.jsonl")')"
+# Read all params from configs/models.py via _common.py (honors PHASE_H_MODELS
+# and PHASE_H_DATA_ROOT env vars).  Validates the tag exists.
+read MODEL_ID OUTPUT LAYER HIDDEN_DIM <<<"$(
+    cd "$REPO_ROOT" && "$PYTHON" -c "
+import sys
+from _common import MODELS, model_dir
+tag = '$TAG'
+if tag not in MODELS:
+    sys.exit(f'Unknown model tag {tag!r}; configured tags: {list(MODELS)}')
+m = MODELS[tag]
+print(m['model_id'], model_dir(tag), m['layer'], m['hidden_dim'])
+"
+)"
+
+# Locate the assistant-axis library (must be pip-installed or on PYTHONPATH).
+PIPELINE_DIR="$("$PYTHON" -c 'import os, assistant_axis; print(os.path.dirname(os.path.dirname(assistant_axis.__file__)) + "/pipeline")')"
+ROLES_DIR="$("$PYTHON" -c 'import os, assistant_axis; print(os.path.dirname(os.path.dirname(assistant_axis.__file__)) + "/data/roles/instructions")')"
+QUESTIONS_FILE="$("$PYTHON" -c 'import os, assistant_axis; print(os.path.dirname(os.path.dirname(assistant_axis.__file__)) + "/data/extraction_questions.jsonl")')"
 
 mkdir -p "$OUTPUT"
 
+echo "=== Pipeline: tag=$TAG ==="
+echo "  model_id:   $MODEL_ID"
+echo "  output:     $OUTPUT"
+echo "  layer:      $LAYER"
+echo "  hidden_dim: $HIDDEN_DIM"
+echo ""
+
 echo "=== Step 1/5: Generate responses (vLLM) ==="
-$PYTHON "$PIPELINE_DIR/1_generate.py" \
+"$PYTHON" "$PIPELINE_DIR/1_generate.py" \
     --model "$MODEL_ID" \
     --roles_dir "$ROLES_DIR" \
     --questions_file "$QUESTIONS_FILE" \
@@ -44,7 +69,7 @@ $PYTHON "$PIPELINE_DIR/1_generate.py" \
     --max_tokens 512
 
 echo "=== Step 2/5: Extract activations at layer $LAYER ==="
-$PYTHON "$PIPELINE_DIR/2_activations.py" \
+"$PYTHON" "$PIPELINE_DIR/2_activations.py" \
     --model "$MODEL_ID" \
     --responses_dir "$OUTPUT/responses" \
     --output_dir "$OUTPUT/activations" \
@@ -52,7 +77,7 @@ $PYTHON "$PIPELINE_DIR/2_activations.py" \
     --batch_size 32
 
 echo "=== Step 3/5: Compute unfiltered role vectors (no judge) ==="
-$PYTHON - "$OUTPUT/activations" "$OUTPUT/vectors" <<'PYEOF'
+"$PYTHON" - "$OUTPUT/activations" "$OUTPUT/vectors" <<'PYEOF'
 import sys
 import torch
 from pathlib import Path
@@ -72,12 +97,12 @@ print(f"Wrote {n} unfiltered role vectors → {out_dir}")
 PYEOF
 
 echo "=== Step 4/5: Compute Lu-style assistant axis ==="
-$PYTHON "$PIPELINE_DIR/5_axis.py" \
+"$PYTHON" "$PIPELINE_DIR/5_axis.py" \
     --vectors_dir "$OUTPUT/vectors" \
     --output "$OUTPUT/axis.pt"
 
 echo "=== Step 5/5: Save default activation vector ==="
-$PYTHON - "$OUTPUT/activations/default.pt" "$OUTPUT/default.pt" <<'PYEOF'
+"$PYTHON" - "$OUTPUT/activations/default.pt" "$OUTPUT/default.pt" <<'PYEOF'
 import sys
 import torch
 from pathlib import Path

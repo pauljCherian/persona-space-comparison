@@ -1,23 +1,23 @@
-.venv/
+# Build artifacts
 __pycache__/
 *.pyc
 *.pyo
 .DS_Store
 
-# Data and outputs (the repo ships code only)
-data/
+# Generated outputs (scoped to specific directories — sample artifacts at
+# any other path can still be committed)
 out/
-results/
-*.pt
-*.npz
-*.png
-*.jsonl
+data/
 
 # Local environment overrides
 .env
 .env.local
+.venv/
 
-# Editor/IDE
+# direnv local cache
+.direnv/
+
+# Editor / IDE
 .vscode/
 .idea/
 *.swp
