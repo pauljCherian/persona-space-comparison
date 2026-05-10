@@ -30,19 +30,27 @@ import numpy as np
 
 from _common import (
     ANCHOR_AXES, AXIS_ORDER, MODELS,
-    load_default, load_role_matrix, model_dir, polar_radar_setup, to_native,
+    load_contrast, load_default, load_role_matrix, model_dir, polar_radar_setup, to_native,
     z_score_default_on_axis,
 )
 
 
 def load_all_models() -> dict[str, dict]:
     data = {}
+    need_v_assistant = "v_assistant" in AXIS_ORDER
     for tag, info in MODELS.items():
         mdir = model_dir(tag)
         X, roles = load_role_matrix(mdir)
         default = load_default(mdir)
+        v_asst = None
+        if need_v_assistant:
+            v_asst_path = mdir / "contrasts" / "v_assistant.pt"
+            if not v_asst_path.exists():
+                raise SystemExit(f"FATAL: {v_asst_path} not found — run `compute_axes.py --all` before bootstrap_radar.py")
+            v_asst = load_contrast(mdir, "v_assistant")
         data[tag] = {
             "X": X, "roles": roles, "default": default,
+            "v_assistant": v_asst,
             "role_to_idx": {r: i for i, r in enumerate(roles)},
             "color": info["color"], "display": info["display"],
         }
@@ -60,7 +68,7 @@ def point_estimates(data: dict[str, dict]) -> dict[str, dict[str, float]]:
     for axis in AXIS_ORDER:
         if axis == "v_assistant":
             for tag, info in data.items():
-                v = info["default"] - info["X"].mean(axis=0)
+                v = info["v_assistant"]  # loaded from contrasts/v_assistant.pt; built with default excluded from role-mean (compute_axes.py:44-48)
                 role_proj = info["X"] @ v
                 sd = role_proj.std()
                 out[tag][axis] = float("nan") if sd < 1e-12 else float((info["default"] @ v - role_proj.mean()) / sd)

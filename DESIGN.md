@@ -40,10 +40,10 @@ v_critic      = mean(8 oppositional roles)    − mean(8 affirmative roles)
 
 ### 3. Per-role projections
 
-Project all 275 role vectors onto each contrast axis:
+Project all 276 role vectors (275 character roles plus the default) onto each contrast axis:
 
 ```
-raw[i, k] = role_vector_i · contrast_k                  for i in 1..275, k in 1..5
+raw[i, k] = role_vector_i · contrast_k                  for i in 1..276, k in 1..5
 ```
 
 Z-score within model per axis (subtract column mean, divide by column std):
@@ -53,6 +53,8 @@ zscore[i, k] = (raw[i, k] − mean_i(raw[·, k])) / std_i(raw[·, k])
 ```
 
 This makes magnitudes commensurable across models (each model's role distribution is its own reference frame). Outputs go to `<model_dir>/projections/{raw.pt, zscore.pt, role_index.json}`.
+
+Note that the default vector is included in the role distribution used for per-axis mean/std. Because `default · v_assistant` is by construction extreme, this slightly inflates the std and shifts the mean upward, mildly reducing default's apparent z-score magnitude. We retain this for byte-equality with parent project's reference values; if you want strict 275-only normalization, filter `"default"` out in `compute_axes.py:project_and_zscore` and `bootstrap_radar.py:load_all_models`.
 
 ### 4. Default-Assistant z-score per axis
 

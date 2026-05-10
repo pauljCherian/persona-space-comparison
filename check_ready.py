@@ -52,12 +52,25 @@ def main() -> int:
                               str(mdir) if present else f"missing {mdir} — run pipeline.sh first")
 
     print("\nVendored library:")
+    role_dir = None
     try:
-        import assistant_axis  # noqa: F401
+        import assistant_axis
         check("assistant_axis importable", True)
+        role_dir = Path(assistant_axis.__file__).parent.parent / "data/roles/instructions"
+        fails += not check(f"upstream role dir exists ({role_dir})", role_dir.exists())
     except ImportError as e:
         check("assistant_axis importable", False, str(e))
         fails += 1
+
+    if role_dir is not None and role_dir.exists():
+        upstream_role_names = {p.stem for p in role_dir.glob("*.json")}
+        missing = [(ax, r) for ax, (pos, neg) in ANCHOR_AXES.items()
+                   for r in pos + neg if r not in upstream_role_names]
+        fails += not check("every anchor in ANCHOR_AXES exists as an upstream role file",
+                           not missing,
+                           "" if not missing else f"{len(missing)} missing: " +
+                           ", ".join(f"{ax}/{r}" for ax, r in missing[:5]) +
+                           (f" (+{len(missing)-5} more)" if len(missing) > 5 else ""))
 
     print("\nGPU (only required for pipeline.sh, not analysis):")
     try:

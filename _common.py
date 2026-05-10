@@ -79,6 +79,12 @@ def load_default(model_path: Path) -> np.ndarray:
     return v.float().squeeze().numpy()
 
 
+def load_contrast(model_path: Path, axis_name: str) -> np.ndarray:
+    """Load a contrast vector (e.g. 'v_assistant') from <model_path>/contrasts/<axis_name>.pt."""
+    v = _extract_tensor(torch.load(model_path / "contrasts" / f"{axis_name}.pt", map_location="cpu", weights_only=False))
+    return v.float().squeeze().numpy()
+
+
 def z_score_default_on_axis(
     X: np.ndarray, default: np.ndarray, pos_idxs: Iterable[int], neg_idxs: Iterable[int]
 ) -> float:

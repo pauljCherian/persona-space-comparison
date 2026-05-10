@@ -54405,3 +54405,900 @@ DEBUG: chat_kwargs = {}
 Processing roles:  68%|██████▊   | 188/276 [1:50:10<51:37, 35.20s/it]2026-05-09 22:25:44,904 - INFO - Processing prodigy: 1200 conversations
 2026-05-09 22:26:19,167 - INFO - Saved 1200 activations for prodigy
 Processing roles:  68%|██████▊   | 189/276 [1:50:44<50:46, 35.02s/it]2026-05-09 22:26:19,486 - INFO - Processing producer: 1200 conversations
+2026-05-09 22:26:55,336 - INFO - Saved 1200 activations for producer
+Processing roles:  69%|██████▉   | 190/276 [1:51:20<50:41, 35.36s/it]2026-05-09 22:26:55,657 - INFO - Processing programmer: 1200 conversations
+2026-05-09 22:27:33,240 - INFO - Saved 1200 activations for programmer
+Processing roles:  69%|██████▉   | 191/276 [1:51:58<51:11, 36.13s/it]2026-05-09 22:27:33,578 - INFO - Processing proofreader: 1200 conversations
+2026-05-09 22:28:07,934 - INFO - Saved 1200 activations for proofreader
+Processing roles:  70%|██████▉   | 192/276 [1:52:33<49:57, 35.69s/it]2026-05-09 22:28:08,238 - INFO - Processing prophet: 1200 conversations
+2026-05-09 22:28:43,134 - INFO - Saved 1200 activations for prophet
+Processing roles:  70%|██████▉   | 193/276 [1:53:08<49:10, 35.55s/it]2026-05-09 22:28:43,470 - INFO - Processing provincial: 1200 conversations
+2026-05-09 22:29:18,054 - INFO - Saved 1200 activations for provincial
+Processing roles:  70%|███████   | 194/276 [1:53:43<48:19, 35.36s/it]2026-05-09 22:29:18,387 - INFO - Processing provocateur: 1200 conversations
+2026-05-09 22:29:52,624 - INFO - Saved 1200 activations for provocateur
+Processing roles:  71%|███████   | 195/276 [1:54:18<47:24, 35.12s/it]2026-05-09 22:29:52,957 - INFO - Processing psychologist: 1200 conversations
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=55 end=568 n_tokens=513
+  DEBUG span: conv=1 start=52 end=481 n_tokens=429
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=31 end=544 n_tokens=513
+  DEBUG span: conv=1 start=28 end=541 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=41 end=554 n_tokens=513
+  DEBUG span: conv=1 start=38 end=551 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=36 end=549 n_tokens=513
+  DEBUG span: conv=1 start=33 end=490 n_tokens=457
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=37 end=550 n_tokens=513
+  DEBUG span: conv=1 start=34 end=547 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=39 end=552 n_tokens=513
+  DEBUG span: conv=1 start=36 end=549 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=36 end=549 n_tokens=513
+  DEBUG span: conv=1 start=33 end=546 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=36 end=549 n_tokens=513
+  DEBUG span: conv=1 start=33 end=546 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=32 end=545 n_tokens=513
+  DEBUG span: conv=1 start=29 end=531 n_tokens=502
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=37 end=550 n_tokens=513
+  DEBUG span: conv=1 start=34 end=547 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=38 end=551 n_tokens=513
+  DEBUG span: conv=1 start=35 end=548 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=36 end=549 n_tokens=513
+  DEBUG span: conv=1 start=33 end=546 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=34 end=547 n_tokens=513
+  DEBUG span: conv=1 start=31 end=544 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=33 end=546 n_tokens=513
+  DEBUG span: conv=1 start=30 end=543 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=37 end=550 n_tokens=513
+  DEBUG span: conv=1 start=34 end=547 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=32 end=545 n_tokens=513
+  DEBUG span: conv=1 start=29 end=542 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=44 end=557 n_tokens=513
+  DEBUG span: conv=1 start=41 end=554 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=32 end=545 n_tokens=513
+  DEBUG span: conv=1 start=29 end=542 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=43 end=556 n_tokens=513
+  DEBUG span: conv=1 start=40 end=553 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=36 end=549 n_tokens=513
+  DEBUG span: conv=1 start=33 end=546 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=37 end=550 n_tokens=513
+  DEBUG span: conv=1 start=34 end=524 n_tokens=490
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=34 end=547 n_tokens=513
+  DEBUG span: conv=1 start=31 end=544 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=37 end=550 n_tokens=513
+  DEBUG span: conv=1 start=34 end=547 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=35 end=548 n_tokens=513
+  DEBUG span: conv=1 start=32 end=478 n_tokens=446
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=45 end=558 n_tokens=513
+  DEBUG span: conv=1 start=42 end=555 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=38 end=551 n_tokens=513
+  DEBUG span: conv=1 start=35 end=548 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=40 end=553 n_tokens=513
+  DEBUG span: conv=1 start=37 end=550 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=37 end=550 n_tokens=513
+  DEBUG span: conv=1 start=34 end=547 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=30 end=543 n_tokens=513
+  DEBUG span: conv=1 start=27 end=540 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=34 end=547 n_tokens=513
+  DEBUG span: conv=1 start=31 end=544 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=36 end=549 n_tokens=513
+  DEBUG span: conv=1 start=33 end=499 n_tokens=466
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=33 end=546 n_tokens=513
+  DEBUG span: conv=1 start=30 end=543 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=33 end=546 n_tokens=513
+  DEBUG span: conv=1 start=30 end=543 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=42 end=555 n_tokens=513
+  DEBUG span: conv=1 start=39 end=552 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=32 end=545 n_tokens=513
+  DEBUG span: conv=1 start=29 end=542 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=35 end=548 n_tokens=513
+  DEBUG span: conv=1 start=32 end=524 n_tokens=492
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=35 end=548 n_tokens=513
+  DEBUG span: conv=1 start=32 end=545 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=29 end=542 n_tokens=513
+  DEBUG span: conv=1 start=26 end=539 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=37 end=550 n_tokens=513
+  DEBUG span: conv=1 start=34 end=547 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=39 end=552 n_tokens=513
+  DEBUG span: conv=1 start=36 end=549 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=41 end=519 n_tokens=478
+  DEBUG span: conv=1 start=38 end=551 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=40 end=553 n_tokens=513
+  DEBUG span: conv=1 start=37 end=550 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=49 end=562 n_tokens=513
+  DEBUG span: conv=1 start=46 end=559 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=40 end=553 n_tokens=513
+  DEBUG span: conv=1 start=37 end=550 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=36 end=549 n_tokens=513
+  DEBUG span: conv=1 start=33 end=546 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=33 end=546 n_tokens=513
+  DEBUG span: conv=1 start=30 end=543 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=38 end=551 n_tokens=513
+  DEBUG span: conv=1 start=35 end=469 n_tokens=434
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=38 end=551 n_tokens=513
+  DEBUG span: conv=1 start=35 end=548 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=36 end=549 n_tokens=513
+  DEBUG span: conv=1 start=33 end=546 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=38 end=551 n_tokens=513
+  DEBUG span: conv=1 start=35 end=548 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=38 end=413 n_tokens=375
+  DEBUG span: conv=1 start=35 end=447 n_tokens=412
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=33 end=546 n_tokens=513
+  DEBUG span: conv=1 start=30 end=543 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=39 end=552 n_tokens=513
+  DEBUG span: conv=1 start=36 end=537 n_tokens=501
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=35 end=548 n_tokens=513
+  DEBUG span: conv=1 start=32 end=477 n_tokens=445
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=34 end=547 n_tokens=513
+  DEBUG span: conv=1 start=31 end=544 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=42 end=555 n_tokens=513
+  DEBUG span: conv=1 start=39 end=456 n_tokens=417
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=43 end=541 n_tokens=498
+  DEBUG span: conv=1 start=40 end=553 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=39 end=552 n_tokens=513
+  DEBUG span: conv=1 start=36 end=549 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=34 end=502 n_tokens=468
+  DEBUG span: conv=1 start=31 end=544 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=38 end=551 n_tokens=513
+  DEBUG span: conv=1 start=35 end=548 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=32 end=545 n_tokens=513
+  DEBUG span: conv=1 start=29 end=542 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=38 end=551 n_tokens=513
+  DEBUG span: conv=1 start=35 end=548 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=38 end=551 n_tokens=513
+  DEBUG span: conv=1 start=35 end=548 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=31 end=544 n_tokens=513
+  DEBUG span: conv=1 start=28 end=541 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=38 end=551 n_tokens=513
+  DEBUG span: conv=1 start=35 end=548 n_tokens=513
+2026-05-09 22:30:27,686 - INFO - Saved 1200 activations for psychologist
+Processing roles:  71%|███████   | 196/276 [1:54:53<46:48, 35.10s/it]2026-05-09 22:30:28,004 - INFO - Processing publisher: 1200 conversations
+2026-05-09 22:31:02,989 - INFO - Saved 1200 activations for publisher
+Processing roles:  71%|███████▏  | 197/276 [1:55:28<46:17, 35.15s/it]2026-05-09 22:31:03,283 - INFO - Processing purist: 1200 conversations
+2026-05-09 22:31:38,278 - INFO - Saved 1200 activations for purist
+Processing roles:  72%|███████▏  | 198/276 [1:56:03<45:45, 35.20s/it]2026-05-09 22:31:38,605 - INFO - Processing realist: 1200 conversations
+2026-05-09 22:32:16,845 - INFO - Saved 1200 activations for realist
+Processing roles:  72%|███████▏  | 199/276 [1:56:42<46:28, 36.21s/it]2026-05-09 22:32:17,166 - INFO - Processing rebel: 1200 conversations
+2026-05-09 22:32:52,088 - INFO - Saved 1200 activations for rebel
+Processing roles:  72%|███████▏  | 200/276 [1:57:17<45:29, 35.91s/it]2026-05-09 22:32:52,387 - INFO - Processing recruiter: 1200 conversations
+2026-05-09 22:33:27,417 - INFO - Saved 1200 activations for recruiter
+Processing roles:  73%|███████▎  | 201/276 [1:57:52<44:40, 35.74s/it]2026-05-09 22:33:27,709 - INFO - Processing refugee: 1200 conversations
+2026-05-09 22:34:03,512 - INFO - Saved 1200 activations for refugee
+Processing roles:  73%|███████▎  | 202/276 [1:58:29<44:12, 35.84s/it]2026-05-09 22:34:03,803 - INFO - Processing reporter: 1200 conversations
+2026-05-09 22:34:40,000 - INFO - Saved 1200 activations for reporter
+Processing roles:  74%|███████▎  | 203/276 [1:59:05<43:54, 36.09s/it]2026-05-09 22:34:40,480 - INFO - Processing researcher: 1200 conversations
+2026-05-09 22:35:15,383 - INFO - Saved 1200 activations for researcher
+Processing roles:  74%|███████▍  | 204/276 [1:59:40<43:01, 35.85s/it]2026-05-09 22:35:15,761 - INFO - Processing retiree: 1200 conversations
+2026-05-09 22:35:51,266 - INFO - Saved 1200 activations for retiree
+Processing roles:  74%|███████▍  | 205/276 [2:00:16<42:23, 35.83s/it]2026-05-09 22:35:51,526 - INFO - Processing revenant: 1200 conversations
+2026-05-09 22:36:29,011 - INFO - Saved 1200 activations for revenant
+Processing roles:  75%|███████▍  | 206/276 [2:00:54<42:30, 36.44s/it]2026-05-09 22:36:29,401 - INFO - Processing reviewer: 1200 conversations
+2026-05-09 22:37:07,681 - INFO - Saved 1200 activations for reviewer
+Processing roles:  75%|███████▌  | 207/276 [2:01:33<42:39, 37.10s/it]2026-05-09 22:37:08,039 - INFO - Processing revolutionary: 1200 conversations
+2026-05-09 22:37:42,824 - INFO - Saved 1200 activations for revolutionary
+Processing roles:  75%|███████▌  | 208/276 [2:02:08<41:22, 36.51s/it]2026-05-09 22:37:43,161 - INFO - Processing robot: 1200 conversations
+2026-05-09 22:38:17,968 - INFO - Saved 1200 activations for robot
+Processing roles:  76%|███████▌  | 209/276 [2:02:43<40:21, 36.14s/it]2026-05-09 22:38:18,446 - INFO - Processing rogue: 1200 conversations
+2026-05-09 22:38:54,435 - INFO - Saved 1200 activations for rogue
+Processing roles:  76%|███████▌  | 210/276 [2:03:19<39:47, 36.18s/it]2026-05-09 22:38:54,703 - INFO - Processing romantic: 1200 conversations
+2026-05-09 22:39:29,171 - INFO - Saved 1200 activations for romantic
+Processing roles:  76%|███████▋  | 211/276 [2:03:54<38:42, 35.73s/it]2026-05-09 22:39:29,403 - INFO - Processing saboteur: 1200 conversations
+2026-05-09 22:40:04,283 - INFO - Saved 1200 activations for saboteur
+Processing roles:  77%|███████▋  | 212/276 [2:04:29<37:57, 35.59s/it]2026-05-09 22:40:04,665 - INFO - Processing sage: 1200 conversations
+2026-05-09 22:40:38,980 - INFO - Saved 1200 activations for sage
+Processing roles:  77%|███████▋  | 213/276 [2:05:04<37:02, 35.28s/it]2026-05-09 22:40:39,232 - INFO - Processing scheduler: 1200 conversations
+2026-05-09 22:41:13,735 - INFO - Saved 1200 activations for scheduler
+Processing roles:  78%|███████▊  | 214/276 [2:05:39<36:17, 35.12s/it]2026-05-09 22:41:13,988 - INFO - Processing scholar: 1200 conversations
+2026-05-09 22:41:49,634 - INFO - Saved 1200 activations for scholar
+Processing roles:  78%|███████▊  | 215/276 [2:06:15<36:01, 35.44s/it]2026-05-09 22:41:50,150 - INFO - Processing scientist: 1200 conversations
+2026-05-09 22:42:24,311 - INFO - Saved 1200 activations for scientist
+Processing roles:  78%|███████▊  | 216/276 [2:06:49<35:08, 35.15s/it]2026-05-09 22:42:24,619 - INFO - Processing scout: 1200 conversations
+2026-05-09 22:42:59,403 - INFO - Saved 1200 activations for scout
+Processing roles:  79%|███████▊  | 217/276 [2:07:24<34:32, 35.13s/it]2026-05-09 22:42:59,718 - INFO - Processing screener: 1200 conversations
+2026-05-09 22:43:33,923 - INFO - Saved 1200 activations for screener
+Processing roles:  79%|███████▉  | 218/276 [2:07:59<33:46, 34.94s/it]2026-05-09 22:43:34,193 - INFO - Processing secretary: 1200 conversations
+2026-05-09 22:44:08,305 - INFO - Saved 1200 activations for secretary
+Processing roles:  79%|███████▉  | 219/276 [2:08:33<33:01, 34.77s/it]2026-05-09 22:44:08,567 - INFO - Processing shaman: 1200 conversations
+2026-05-09 22:44:43,510 - INFO - Saved 1200 activations for shaman
+Processing roles:  80%|███████▉  | 220/276 [2:09:09<32:35, 34.91s/it]2026-05-09 22:44:43,821 - INFO - Processing shapeshifter: 1200 conversations
+2026-05-09 22:45:18,257 - INFO - Saved 1200 activations for shapeshifter
+Processing roles:  80%|████████  | 221/276 [2:09:43<31:57, 34.87s/it]2026-05-09 22:45:18,583 - INFO - Processing simulacrum: 1200 conversations
+2026-05-09 22:45:52,693 - INFO - Saved 1200 activations for simulacrum
+Processing roles:  80%|████████  | 222/276 [2:10:18<31:15, 34.74s/it]2026-05-09 22:45:53,020 - INFO - Processing skeptic: 1200 conversations
+2026-05-09 22:46:27,735 - INFO - Saved 1200 activations for skeptic
+Processing roles:  81%|████████  | 223/276 [2:10:53<30:48, 34.87s/it]2026-05-09 22:46:28,203 - INFO - Processing smuggler: 1200 conversations
+2026-05-09 22:47:05,097 - INFO - Saved 1200 activations for smuggler
+Processing roles:  81%|████████  | 224/276 [2:11:30<30:49, 35.56s/it]2026-05-09 22:47:05,381 - INFO - Processing sociologist: 1200 conversations
+2026-05-09 22:47:39,462 - INFO - Saved 1200 activations for sociologist
+Processing roles:  82%|████████▏ | 225/276 [2:12:04<29:55, 35.20s/it]2026-05-09 22:47:39,738 - INFO - Processing soldier: 1200 conversations
+2026-05-09 22:48:14,036 - INFO - Saved 1200 activations for soldier
+Processing roles:  82%|████████▏ | 226/276 [2:12:39<29:10, 35.01s/it]2026-05-09 22:48:14,304 - INFO - Processing sommelier: 1200 conversations
+2026-05-09 22:48:48,777 - INFO - Saved 1200 activations for sommelier
+Processing roles:  82%|████████▏ | 227/276 [2:13:14<28:32, 34.94s/it]2026-05-09 22:48:49,079 - INFO - Processing specialist: 1200 conversations
+2026-05-09 22:49:23,206 - INFO - Saved 1200 activations for specialist
+Processing roles:  83%|████████▎ | 228/276 [2:13:48<27:49, 34.78s/it]2026-05-09 22:49:23,473 - INFO - Processing spirit: 1200 conversations
+2026-05-09 22:49:57,869 - INFO - Saved 1200 activations for spirit
+Processing roles:  83%|████████▎ | 229/276 [2:14:23<27:12, 34.74s/it]2026-05-09 22:49:58,129 - INFO - Processing spy: 1200 conversations
+2026-05-09 22:50:32,405 - INFO - Saved 1200 activations for spy
+Processing roles:  83%|████████▎ | 230/276 [2:14:57<26:35, 34.68s/it]2026-05-09 22:50:32,660 - INFO - Processing statistician: 1200 conversations
+2026-05-09 22:51:06,680 - INFO - Saved 1200 activations for statistician
+Processing roles:  84%|████████▎ | 231/276 [2:15:32<25:55, 34.56s/it]2026-05-09 22:51:06,942 - INFO - Processing stoic: 1200 conversations
+2026-05-09 22:51:40,970 - INFO - Saved 1200 activations for stoic
+Processing roles:  84%|████████▍ | 232/276 [2:16:06<25:17, 34.48s/it]2026-05-09 22:51:41,252 - INFO - Processing strategist: 1200 conversations
+2026-05-09 22:52:15,525 - INFO - Saved 1200 activations for strategist
+Processing roles:  84%|████████▍ | 233/276 [2:16:41<24:43, 34.50s/it]2026-05-09 22:52:15,785 - INFO - Processing student: 1200 conversations
+2026-05-09 22:52:49,776 - INFO - Saved 1200 activations for student
+Processing roles:  85%|████████▍ | 234/276 [2:17:15<24:05, 34.42s/it]2026-05-09 22:52:50,037 - INFO - Processing summarizer: 1200 conversations
+2026-05-09 22:53:23,928 - INFO - Saved 1200 activations for summarizer
+Processing roles:  85%|████████▌ | 235/276 [2:17:49<23:28, 34.36s/it]2026-05-09 22:53:24,247 - INFO - Processing supervisor: 1200 conversations
+2026-05-09 22:53:59,317 - INFO - Saved 1200 activations for supervisor
+Processing roles:  86%|████████▌ | 236/276 [2:18:24<23:06, 34.66s/it]2026-05-09 22:53:59,760 - INFO - Processing surfer: 1200 conversations
+2026-05-09 22:54:34,137 - INFO - Saved 1200 activations for surfer
+Processing roles:  86%|████████▌ | 237/276 [2:18:59<22:33, 34.70s/it]2026-05-09 22:54:34,384 - INFO - Processing survivor: 1200 conversations
+2026-05-09 22:55:08,739 - INFO - Saved 1200 activations for survivor
+Processing roles:  86%|████████▌ | 238/276 [2:19:34<21:57, 34.66s/it]2026-05-09 22:55:08,954 - INFO - Processing swarm: 1200 conversations
+2026-05-09 22:55:43,745 - INFO - Saved 1200 activations for swarm
+Processing roles:  87%|████████▋ | 239/276 [2:20:09<21:26, 34.77s/it]2026-05-09 22:55:43,995 - INFO - Processing symbiont: 1200 conversations
+2026-05-09 22:56:18,503 - INFO - Saved 1200 activations for symbiont
+Processing roles:  87%|████████▋ | 240/276 [2:20:43<20:51, 34.76s/it]2026-05-09 22:56:18,731 - INFO - Processing synthesizer: 1200 conversations
+2026-05-09 22:56:53,185 - INFO - Saved 1200 activations for synthesizer
+Processing roles:  87%|████████▋ | 241/276 [2:21:18<20:16, 34.74s/it]2026-05-09 22:56:53,434 - INFO - Processing teacher: 1200 conversations
+2026-05-09 22:57:27,827 - INFO - Saved 1200 activations for teacher
+Processing roles:  88%|████████▊ | 242/276 [2:21:53<19:40, 34.71s/it]2026-05-09 22:57:28,065 - INFO - Processing technologist: 1200 conversations
+2026-05-09 22:58:02,638 - INFO - Saved 1200 activations for technologist
+Processing roles:  88%|████████▊ | 243/276 [2:22:28<19:06, 34.74s/it]2026-05-09 22:58:02,875 - INFO - Processing teenager: 1200 conversations
+2026-05-09 22:58:37,423 - INFO - Saved 1200 activations for teenager
+Processing roles:  88%|████████▊ | 244/276 [2:23:02<18:32, 34.75s/it]2026-05-09 22:58:37,664 - INFO - Processing theorist: 1200 conversations
+2026-05-09 22:59:12,335 - INFO - Saved 1200 activations for theorist
+Processing roles:  89%|████████▉ | 245/276 [2:23:37<17:58, 34.80s/it]2026-05-09 22:59:12,554 - INFO - Processing therapist: 1200 conversations
+2026-05-09 22:59:47,223 - INFO - Saved 1200 activations for therapist
+Processing roles:  89%|████████▉ | 246/276 [2:24:12<17:25, 34.86s/it]2026-05-09 22:59:47,566 - INFO - Processing toddler: 1200 conversations
+2026-05-09 23:00:22,156 - INFO - Saved 1200 activations for toddler
+Processing roles:  89%|████████▉ | 247/276 [2:24:47<16:50, 34.86s/it]2026-05-09 23:00:22,407 - INFO - Processing traditionalist: 1200 conversations
+2026-05-09 23:00:57,072 - INFO - Saved 1200 activations for traditionalist
+Processing roles:  90%|████████▉ | 248/276 [2:25:22<16:16, 34.87s/it]2026-05-09 23:00:57,321 - INFO - Processing trainer: 1200 conversations
+2026-05-09 23:01:31,742 - INFO - Saved 1200 activations for trainer
+Processing roles:  90%|█████████ | 249/276 [2:25:57<15:39, 34.80s/it]2026-05-09 23:01:31,957 - INFO - Processing translator: 1200 conversations
+2026-05-09 23:02:06,222 - INFO - Saved 1200 activations for translator
+Processing roles:  91%|█████████ | 250/276 [2:26:31<15:02, 34.71s/it]2026-05-09 23:02:06,467 - INFO - Processing tree: 1200 conversations
+2026-05-09 23:02:41,571 - INFO - Saved 1200 activations for tree
+Processing roles:  91%|█████████ | 251/276 [2:27:07<14:32, 34.90s/it]2026-05-09 23:02:41,806 - INFO - Processing trickster: 1200 conversations
+2026-05-09 23:03:16,603 - INFO - Saved 1200 activations for trickster
+Processing roles:  91%|█████████▏| 252/276 [2:27:42<13:58, 34.94s/it]2026-05-09 23:03:16,839 - INFO - Processing tulpa: 1200 conversations
+2026-05-09 23:03:51,620 - INFO - Saved 1200 activations for tulpa
+Processing roles:  92%|█████████▏| 253/276 [2:28:17<13:24, 34.97s/it]2026-05-09 23:03:51,869 - INFO - Processing tutor: 1200 conversations
+2026-05-09 23:04:26,695 - INFO - Saved 1200 activations for tutor
+Processing roles:  92%|█████████▏| 254/276 [2:28:52<12:49, 35.00s/it]2026-05-09 23:04:26,933 - INFO - Processing validator: 1200 conversations
+2026-05-09 23:05:01,174 - INFO - Saved 1200 activations for validator
+Processing roles:  92%|█████████▏| 255/276 [2:29:26<12:11, 34.84s/it]2026-05-09 23:05:01,414 - INFO - Processing vampire: 1200 conversations
+2026-05-09 23:05:35,952 - INFO - Saved 1200 activations for vampire
+Processing roles:  93%|█████████▎| 256/276 [2:30:01<11:36, 34.82s/it]2026-05-09 23:05:36,191 - INFO - Processing vegan: 1200 conversations
+2026-05-09 23:06:11,148 - INFO - Saved 1200 activations for vegan
+Processing roles:  93%|█████████▎| 257/276 [2:30:36<11:03, 34.93s/it]2026-05-09 23:06:11,386 - INFO - Processing veteran: 1200 conversations
+2026-05-09 23:06:46,012 - INFO - Saved 1200 activations for veteran
+Processing roles:  93%|█████████▎| 258/276 [2:31:11<10:28, 34.91s/it]2026-05-09 23:06:46,255 - INFO - Processing veterinarian: 1200 conversations
+2026-05-09 23:07:20,712 - INFO - Saved 1200 activations for veterinarian
+Processing roles:  94%|█████████▍| 259/276 [2:31:46<09:52, 34.86s/it]2026-05-09 23:07:20,986 - INFO - Processing vigilante: 1200 conversations
+2026-05-09 23:07:55,489 - INFO - Saved 1200 activations for vigilante
+Processing roles:  94%|█████████▍| 260/276 [2:32:20<09:17, 34.82s/it]2026-05-09 23:07:55,730 - INFO - Processing virtuoso: 1200 conversations
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=33 end=546 n_tokens=513
+  DEBUG span: conv=1 start=30 end=543 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=34 end=547 n_tokens=513
+  DEBUG span: conv=1 start=31 end=544 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=36 end=549 n_tokens=513
+  DEBUG span: conv=1 start=33 end=546 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=34 end=547 n_tokens=513
+  DEBUG span: conv=1 start=31 end=544 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=32 end=545 n_tokens=513
+  DEBUG span: conv=1 start=29 end=542 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=34 end=547 n_tokens=513
+  DEBUG span: conv=1 start=31 end=544 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=36 end=549 n_tokens=513
+  DEBUG span: conv=1 start=33 end=546 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=39 end=552 n_tokens=513
+  DEBUG span: conv=1 start=36 end=549 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=36 end=549 n_tokens=513
+  DEBUG span: conv=1 start=33 end=546 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=38 end=551 n_tokens=513
+  DEBUG span: conv=1 start=35 end=508 n_tokens=473
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=38 end=551 n_tokens=513
+  DEBUG span: conv=1 start=35 end=548 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=36 end=549 n_tokens=513
+  DEBUG span: conv=1 start=33 end=546 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=37 end=550 n_tokens=513
+  DEBUG span: conv=1 start=34 end=547 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=32 end=545 n_tokens=513
+  DEBUG span: conv=1 start=29 end=542 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=42 end=555 n_tokens=513
+  DEBUG span: conv=1 start=39 end=552 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=39 end=552 n_tokens=513
+  DEBUG span: conv=1 start=36 end=549 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=35 end=548 n_tokens=513
+  DEBUG span: conv=1 start=32 end=513 n_tokens=481
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=35 end=548 n_tokens=513
+  DEBUG span: conv=1 start=32 end=545 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=42 end=555 n_tokens=513
+  DEBUG span: conv=1 start=39 end=552 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=32 end=545 n_tokens=513
+  DEBUG span: conv=1 start=29 end=542 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=32 end=545 n_tokens=513
+  DEBUG span: conv=1 start=29 end=542 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=38 end=551 n_tokens=513
+  DEBUG span: conv=1 start=35 end=548 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=32 end=545 n_tokens=513
+  DEBUG span: conv=1 start=29 end=542 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=35 end=548 n_tokens=513
+  DEBUG span: conv=1 start=32 end=545 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=35 end=548 n_tokens=513
+  DEBUG span: conv=1 start=32 end=545 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=34 end=547 n_tokens=513
+  DEBUG span: conv=1 start=31 end=544 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=39 end=552 n_tokens=513
+  DEBUG span: conv=1 start=36 end=549 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=38 end=551 n_tokens=513
+  DEBUG span: conv=1 start=35 end=548 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=35 end=548 n_tokens=513
+  DEBUG span: conv=1 start=32 end=545 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=32 end=545 n_tokens=513
+  DEBUG span: conv=1 start=29 end=542 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=37 end=550 n_tokens=513
+  DEBUG span: conv=1 start=34 end=547 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=40 end=553 n_tokens=513
+  DEBUG span: conv=1 start=37 end=550 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=32 end=545 n_tokens=513
+  DEBUG span: conv=1 start=29 end=542 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=43 end=556 n_tokens=513
+  DEBUG span: conv=1 start=40 end=553 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=35 end=548 n_tokens=513
+  DEBUG span: conv=1 start=32 end=458 n_tokens=426
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=34 end=547 n_tokens=513
+  DEBUG span: conv=1 start=31 end=544 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=40 end=553 n_tokens=513
+  DEBUG span: conv=1 start=37 end=550 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=34 end=547 n_tokens=513
+  DEBUG span: conv=1 start=31 end=544 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=33 end=546 n_tokens=513
+  DEBUG span: conv=1 start=30 end=543 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=37 end=550 n_tokens=513
+  DEBUG span: conv=1 start=34 end=547 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=32 end=545 n_tokens=513
+  DEBUG span: conv=1 start=29 end=542 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=37 end=550 n_tokens=513
+  DEBUG span: conv=1 start=34 end=547 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=34 end=547 n_tokens=513
+  DEBUG span: conv=1 start=31 end=505 n_tokens=474
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=36 end=549 n_tokens=513
+  DEBUG span: conv=1 start=33 end=428 n_tokens=395
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=43 end=556 n_tokens=513
+  DEBUG span: conv=1 start=40 end=414 n_tokens=374
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=36 end=549 n_tokens=513
+  DEBUG span: conv=1 start=33 end=546 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=33 end=546 n_tokens=513
+  DEBUG span: conv=1 start=30 end=543 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=36 end=549 n_tokens=513
+  DEBUG span: conv=1 start=33 end=546 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=35 end=548 n_tokens=513
+  DEBUG span: conv=1 start=32 end=475 n_tokens=443
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=36 end=549 n_tokens=513
+  DEBUG span: conv=1 start=33 end=546 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=39 end=552 n_tokens=513
+  DEBUG span: conv=1 start=36 end=549 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=40 end=288 n_tokens=248
+  DEBUG span: conv=1 start=37 end=482 n_tokens=445
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=38 end=551 n_tokens=513
+  DEBUG span: conv=1 start=35 end=548 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=35 end=548 n_tokens=513
+  DEBUG span: conv=1 start=32 end=545 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=33 end=546 n_tokens=513
+  DEBUG span: conv=1 start=30 end=543 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=50 end=563 n_tokens=513
+  DEBUG span: conv=1 start=47 end=560 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=38 end=551 n_tokens=513
+  DEBUG span: conv=1 start=35 end=546 n_tokens=511
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=38 end=551 n_tokens=513
+  DEBUG span: conv=1 start=35 end=548 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=39 end=552 n_tokens=513
+  DEBUG span: conv=1 start=36 end=549 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=36 end=549 n_tokens=513
+  DEBUG span: conv=1 start=33 end=546 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=41 end=554 n_tokens=513
+  DEBUG span: conv=1 start=38 end=551 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=36 end=549 n_tokens=513
+  DEBUG span: conv=1 start=33 end=546 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=37 end=550 n_tokens=513
+  DEBUG span: conv=1 start=34 end=476 n_tokens=442
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=35 end=548 n_tokens=513
+  DEBUG span: conv=1 start=32 end=545 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=34 end=547 n_tokens=513
+  DEBUG span: conv=1 start=31 end=544 n_tokens=513
+2026-05-09 23:08:30,531 - INFO - Saved 1200 activations for virtuoso
+Processing roles:  95%|█████████▍| 261/276 [2:32:55<08:43, 34.89s/it]2026-05-09 23:08:30,767 - INFO - Processing virus: 1200 conversations
+2026-05-09 23:09:04,770 - INFO - Saved 1200 activations for virus
+Processing roles:  95%|█████████▍| 262/276 [2:33:30<08:05, 34.70s/it]2026-05-09 23:09:05,012 - INFO - Processing visionary: 1200 conversations
+2026-05-09 23:09:39,494 - INFO - Saved 1200 activations for visionary
+Processing roles:  95%|█████████▌| 263/276 [2:34:04<07:31, 34.70s/it]2026-05-09 23:09:39,736 - INFO - Processing void: 1200 conversations
+2026-05-09 23:10:13,987 - INFO - Saved 1200 activations for void
+Processing roles:  96%|█████████▌| 264/276 [2:34:39<06:55, 34.64s/it]2026-05-09 23:10:14,225 - INFO - Processing wanderer: 1200 conversations
+2026-05-09 23:10:48,608 - INFO - Saved 1200 activations for wanderer
+Processing roles:  96%|█████████▌| 265/276 [2:35:14<06:20, 34.63s/it]2026-05-09 23:10:48,843 - INFO - Processing warrior: 1200 conversations
+2026-05-09 23:11:23,183 - INFO - Saved 1200 activations for warrior
+Processing roles:  96%|█████████▋| 266/276 [2:35:48<05:46, 34.61s/it]2026-05-09 23:11:23,396 - INFO - Processing whale: 1200 conversations
+2026-05-09 23:11:57,801 - INFO - Saved 1200 activations for whale
+Processing roles:  97%|█████████▋| 267/276 [2:36:23<05:11, 34.62s/it]2026-05-09 23:11:58,032 - INFO - Processing widow: 1200 conversations
+2026-05-09 23:12:33,323 - INFO - Saved 1200 activations for widow
+Processing roles:  97%|█████████▋| 268/276 [2:36:58<04:39, 34.92s/it]2026-05-09 23:12:33,663 - INFO - Processing wind: 1200 conversations
+2026-05-09 23:13:09,288 - INFO - Saved 1200 activations for wind
+Processing roles:  97%|█████████▋| 269/276 [2:37:34<04:06, 35.21s/it]2026-05-09 23:13:09,554 - INFO - Processing witch: 1200 conversations
+2026-05-09 23:13:44,076 - INFO - Saved 1200 activations for witch
+Processing roles:  98%|█████████▊| 270/276 [2:38:09<03:30, 35.08s/it]2026-05-09 23:13:44,311 - INFO - Processing witness: 1200 conversations
+2026-05-09 23:14:18,203 - INFO - Saved 1200 activations for witness
+Processing roles:  98%|█████████▊| 271/276 [2:38:43<02:53, 34.79s/it]2026-05-09 23:14:18,443 - INFO - Processing workaholic: 1200 conversations
+2026-05-09 23:14:53,241 - INFO - Saved 1200 activations for workaholic
+Processing roles:  99%|█████████▊| 272/276 [2:39:18<02:19, 34.87s/it]2026-05-09 23:14:53,481 - INFO - Processing wraith: 1200 conversations
+2026-05-09 23:15:27,674 - INFO - Saved 1200 activations for wraith
+Processing roles:  99%|█████████▉| 273/276 [2:39:53<01:44, 34.73s/it]2026-05-09 23:15:27,908 - INFO - Processing writer: 1200 conversations
+2026-05-09 23:16:02,471 - INFO - Saved 1200 activations for writer
+Processing roles:  99%|█████████▉| 274/276 [2:40:27<01:09, 34.75s/it]2026-05-09 23:16:02,695 - INFO - Processing zealot: 1200 conversations
+2026-05-09 23:16:37,522 - INFO - Saved 1200 activations for zealot
+Processing roles: 100%|█████████▉| 275/276 [2:41:02<00:34, 34.84s/it]2026-05-09 23:16:37,762 - INFO - Processing zeitgeist: 1200 conversations
+2026-05-09 23:17:12,512 - INFO - Saved 1200 activations for zeitgeist
+Processing roles: 100%|██████████| 276/276 [2:41:37<00:00, 34.89s/it]Processing roles: 100%|██████████| 276/276 [2:41:37<00:00, 35.14s/it]
+2026-05-09 23:17:12,741 - INFO - Done!
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=36 end=549 n_tokens=513
+  DEBUG span: conv=1 start=33 end=546 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=33 end=546 n_tokens=513
+  DEBUG span: conv=1 start=30 end=539 n_tokens=509
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=34 end=547 n_tokens=513
+  DEBUG span: conv=1 start=31 end=544 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=34 end=547 n_tokens=513
+  DEBUG span: conv=1 start=31 end=544 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=38 end=551 n_tokens=513
+  DEBUG span: conv=1 start=35 end=548 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=34 end=547 n_tokens=513
+  DEBUG span: conv=1 start=31 end=544 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=38 end=551 n_tokens=513
+  DEBUG span: conv=1 start=35 end=548 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=35 end=548 n_tokens=513
+  DEBUG span: conv=1 start=32 end=545 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=45 end=558 n_tokens=513
+  DEBUG span: conv=1 start=42 end=478 n_tokens=436
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=34 end=547 n_tokens=513
+  DEBUG span: conv=1 start=31 end=511 n_tokens=480
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=31 end=544 n_tokens=513
+  DEBUG span: conv=1 start=28 end=541 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=40 end=553 n_tokens=513
+  DEBUG span: conv=1 start=37 end=550 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=35 end=548 n_tokens=513
+  DEBUG span: conv=1 start=32 end=545 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=36 end=549 n_tokens=513
+  DEBUG span: conv=1 start=33 end=546 n_tokens=513
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=45 end=558 n_tokens=513
+  DEBUG span: conv=1 start=42 end=503 n_tokens=461
+DEBUG: chat_kwargs = {}
+  DEBUG span: conv=0 start=38 end=551 n_tokens=513
+  DEBUG span: conv=1 start=35 end=548 n_tokens=513
+=== Step 3/5: Compute unfiltered role vectors (no judge) ===
+Wrote 276 unfiltered role vectors → /jumbo/lisp/paulcherian/persona-space-comparison/data/phi-3.5-mini/vectors
+=== Step 4/5: Compute Lu-style assistant axis ===
+Found 276 vector files
+Loading vectors:   0%|          | 0/276 [00:00<?, ?it/s]  aberration: default/mean vector
+  absurdist: default/mean vector
+  accountant: default/mean vector
+  activist: default/mean vector
+  actor: default/mean vector
+  addict: default/mean vector
+  adolescent: default/mean vector
+  advocate: default/mean vector
+  alien: default/mean vector
+  altruist: default/mean vector
+  amateur: default/mean vector
+  ambassador: default/mean vector
+  amnesiac: default/mean vector
+  analyst: default/mean vector
+  anarchist: default/mean vector
+  ancient: default/mean vector
+  angel: default/mean vector
+  anthropologist: default/mean vector
+  archaeologist: default/mean vector
+  architect: default/mean vector
+  archivist: default/mean vector
+  artisan: default/mean vector
+  ascetic: default/mean vector
+  assistant: default/mean vector
+  auctioneer: default/mean vector
+  auditor: default/mean vector
+  avatar: default/mean vector
+  bard: default/mean vector
+  bartender: default/mean vector
+  biologist: default/mean vector
+  blogger: default/mean vector
+  bohemian: default/mean vector
+  builder: default/mean vector
+  caregiver: default/mean vector
+  cartographer: default/mean vector
+  caveman: default/mean vector
+  celebrity: default/mean vector
+  chameleon: default/mean vector
+  chef: default/mean vector
+  chemist: default/mean vector
+  chimera: default/mean vector
+  coach: default/mean vector
+  collaborator: default/mean vector
+  collector: default/mean vector
+  comedian: default/mean vector
+  competitor: default/mean vector
+  composer: default/mean vector
+  conservator: default/mean vector
+  consultant: default/mean vector
+  contrarian: default/mean vector
+  coordinator: default/mean vector
+  coral_reef: default/mean vector
+  cosmopolitan: default/mean vector
+  counselor: default/mean vector
+  criminal: default/mean vector
+  critic: default/mean vector
+  crystalline: default/mean vector
+  curator: default/mean vector
+  cyborg: default/mean vector
+  cynic: default/mean vector
+  daredevil: default/mean vector
+  debugger: default/mean vector
+  default: default/mean vector
+  demon: default/mean vector
+  designer: default/mean vector
+  destroyer: default/mean vector
+  detective: default/mean vector
+  devils_advocate: default/mean vector
+  dilettante: default/mean vector
+  dispatcher: default/mean vector
+  divorcee: default/mean vector
+  doctor: default/mean vector
+  dreamer: default/mean vector
+  echo: default/mean vector
+  economist: default/mean vector
+  ecosystem: default/mean vector
+  editor: default/mean vector
+  egregore: default/mean vector
+  elder: default/mean vector
+  eldritch: default/mean vector
+  emissary: default/mean vector
+  empath: default/mean vector
+  engineer: default/mean vector
+  entrepreneur: default/mean vector
+  evaluator: default/mean vector
+  evangelist: default/mean vector
+  examiner: default/mean vector
+  exile: default/mean vector
+  expatriate: default/mean vector
+  facilitator: default/mean vector
+  familiar: default/mean vector
+  fixer: default/mean vector
+  flaneur: default/mean vector
+  fool: default/mean vector
+  forecaster: default/mean vector
+  futurist: default/mean vector
+  gamer: default/mean vector
+  generalist: default/mean vector
+  genie: default/mean vector
+  geographer: default/mean vector
+  ghost: default/mean vector
+  golem: default/mean vector
+  gossip: default/mean vector
+  grader: default/mean vector
+  graduate: default/mean vector
+  grandparent: default/mean vector
+  guardian: default/mean vector
+  guide: default/mean vector
+  guru: default/mean vector
+  hacker: default/mean vector
+  healer: default/mean vector
+  hedonist: default/mean vector
+  hermit: default/mean vector
+  historian: default/mean vector
+  hive: default/mean vector
+  hoarder: default/mean vector
+  homunculus: default/mean vector
+  hybrid: default/mean vector
+  idealist: default/mean vector
+  immigrant: default/mean vector
+  improviser: default/mean vector
+  infant: default/mean vector
+  influencer: default/mean vector
+  instructor: default/mean vector
+  interpreter: default/mean vector
+  interviewer: default/mean vector
+  jester: default/mean vector
+  journalist: default/mean vector
+  judge: default/mean vector
+  lawyer: default/mean vector
+  leviathan: default/mean vector
+  librarian: default/mean vector
+  linguist: default/mean vector
+  loner: default/mean vector
+  luddite: default/mean vector
+  marketer: default/mean vector
+  martyr: default/mean vector
+  mathematician: default/mean vector
+  maverick: default/mean vector
+  mechanic: default/mean vector
+  mediator: default/mean vector
+  mentor: default/mean vector
+  merchant: default/mean vector
+  minimalist: default/mean vector
+  moderator: default/mean vector
+  musician: default/mean vector
+  mycorrhizal: default/mean vector
+  mystic: default/mean vector
+  narcissist: default/mean vector
+  narrator: default/mean vector
+  naturalist: default/mean vector
+  navigator: default/mean vector
+  negotiator: default/mean vector
+  networker: default/mean vector
+  newlywed: default/mean vector
+  nomad: default/mean vector
+  novelist: default/mean vector
+  nutritionist: default/mean vector
+  observer: default/mean vector
+  optimist: default/mean vector
+  oracle: default/mean vector
+  organizer: default/mean vector
+  orphan: default/mean vector
+  pacifist: default/mean vector
+  paramedic: default/mean vector
+  parasite: default/mean vector
+  parent: default/mean vector
+  patient: default/mean vector
+  peacekeeper: default/mean vector
+  perfectionist: default/mean vector
+  pharmacist: default/mean vector
+  philosopher: default/mean vector
+  photographer: default/mean vector
+  physicist: default/mean vector
+  pilgrim: default/mean vector
+  pilot: default/mean vector
+  pirate: default/mean vector
+  planner: default/mean vector
+  playwright: default/mean vector
+  podcaster: default/mean vector
+  poet: default/mean vector
+  polymath: default/mean vector
+  pragmatist: default/mean vector
+  predator: default/mean vector
+  presenter: default/mean vector
+  prey: default/mean vector
+  prisoner: default/mean vector
+  procrastinator: default/mean vector
+  prodigy: default/mean vector
+  producer: default/mean vector
+  programmer: default/mean vector
+  proofreader: default/mean vector
+  prophet: default/mean vector
+  provincial: default/mean vector
+  provocateur: default/mean vector
+  psychologist: default/mean vector
+  publisher: default/mean vector
+  purist: default/mean vector
+  realist: default/mean vector
+  rebel: default/mean vector
+  recruiter: default/mean vector
+  refugee: default/mean vector
+  reporter: default/mean vector
+  researcher: default/mean vector
+  retiree: default/mean vector
+  revenant: default/mean vector
+  reviewer: default/mean vector
+  revolutionary: default/mean vector
+  robot: default/mean vector
+  rogue: default/mean vector
+  romantic: default/mean vector
+  saboteur: default/mean vector
+  sage: default/mean vector
+  scheduler: default/mean vector
+  scholar: default/mean vector
+  scientist: default/mean vector
+  scout: default/mean vector
+  screener: default/mean vector
+  secretary: default/mean vector
+  shaman: default/mean vector
+  shapeshifter: default/mean vector
+  simulacrum: default/mean vector
+  skeptic: default/mean vector
+  smuggler: default/mean vector
+  sociologist: default/mean vector
+  soldier: default/mean vector
+  sommelier: default/mean vector
+  specialist: default/mean vector
+  spirit: default/mean vector
+  spy: default/mean vector
+  statistician: default/mean vector
+  stoic: default/mean vector
+  strategist: default/mean vector
+  student: default/mean vector
+  summarizer: default/mean vector
+  supervisor: default/mean vector
+  surfer: default/mean vector
+  survivor: default/mean vector
+  swarm: default/mean vector
+  symbiont: default/mean vector
+  synthesizer: default/mean vector
+  teacher: default/mean vector
+  technologist: default/mean vector
+  teenager: default/mean vector
+  theorist: default/mean vector
+  therapist: default/mean vector
+  toddler: default/mean vector
+  traditionalist: default/mean vector
+  trainer: default/mean vector
+  translator: default/mean vector
+  tree: default/mean vector
+  trickster: default/mean vector
+  tulpa: default/mean vector
+  tutor: default/mean vector
+  validator: default/mean vector
+Loading vectors: 100%|██████████| 276/276 [00:00<00:00, 4778.81it/s]
+  vampire: default/mean vector
+  vegan: default/mean vector
+  veteran: default/mean vector
+  veterinarian: default/mean vector
+  vigilante: default/mean vector
+  virtuoso: default/mean vector
+  virus: default/mean vector
+  visionary: default/mean vector
+  void: default/mean vector
+  wanderer: default/mean vector
+  warrior: default/mean vector
+  whale: default/mean vector
+  widow: default/mean vector
+  wind: default/mean vector
+  witch: default/mean vector
+  witness: default/mean vector
+  workaholic: default/mean vector
+  wraith: default/mean vector
+  writer: default/mean vector
+  zealot: default/mean vector
+  zeitgeist: default/mean vector
+
+Loaded 276 default vectors, 0 role vectors
+Error: No role vectors found
