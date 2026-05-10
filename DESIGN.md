@@ -54,7 +54,7 @@ zscore[i, k] = (raw[i, k] − mean_i(raw[·, k])) / std_i(raw[·, k])
 
 This makes magnitudes commensurable across models (each model's role distribution is its own reference frame). Outputs go to `<model_dir>/projections/{raw.pt, zscore.pt, role_index.json}`.
 
-Note that the default vector is included in the role distribution used for per-axis mean/std. Because `default · v_assistant` is by construction extreme, this slightly inflates the std and shifts the mean upward, mildly reducing default's apparent z-score magnitude. We retain this for byte-equality with parent project's reference values; if you want strict 275-only normalization, filter `"default"` out in `compute_axes.py:project_and_zscore` and `bootstrap_radar.py:load_all_models`.
+Note that the default vector is included in the role distribution used for per-axis mean/std. Because `default · v_assistant` is by construction extreme, this slightly inflates the std and shifts the mean upward, mildly reducing default's apparent z-score magnitude. We retain this as the documented design choice; if you want strict 275-only normalization, filter `"default"` out in `compute_axes.py:project_and_zscore` and `bootstrap_radar.py:load_all_models`.
 
 ### 4. Default-Assistant z-score per axis
 
@@ -100,13 +100,13 @@ Lu et al. use layer N/2 (the middle residual stream layer) as canonical. Verifie
 
 These are configured per-model in `configs/models.py`. To override, edit the file.
 
-Lu et al. App. B.4 reports that nearby layers (L ± 2) yield essentially identical persona structure. We do **not** sweep layers in this minimal repo — the parent project includes a layer-sweep script (`scripts/36_phase_h_layer_sweep.sh`) which was deleted as ancillary; if needed for robustness analysis, it can be re-added.
+Lu et al. App. B.4 reports that nearby layers (L ± 2) yield essentially identical persona structure. We do **not** sweep layers in this minimal repo. To sweep, edit `MODELS[tag]['layer']` per model and re-run `pipeline.sh` / `compute_axes.py`.
 
 ## Why no judge
 
 The standard Lu et al. pipeline includes an LLM-judge filter (step 3) that scores each rollout for role-fidelity on a 0–3 scale and keeps only score=3 samples before averaging. We omit this step. Three reasons:
 
-1. **Empirical** — for all three models in `configs/models.py`, the parent project verified that `vectors/` (judge-filtered) and `vectors_unfiltered/` (no judge) directories contain byte-identical role vectors. Filter rate is effectively 100% for these small instruct models on the role/question set: every rollout passes the judge.
+1. **Empirical** — for all three models in `configs/models.py`, filtered (judge score=3) and unfiltered role-vector matrices are byte-identical. Filter rate is effectively 100% for these small instruct models on the role/question set: every rollout passes the judge.
 
 2. **Cost** — judging is ~24 GPU-hours of API time and ~$70/model in OpenAI API spend. This is the most expensive step in the entire pipeline.
 
@@ -116,7 +116,7 @@ If you swap in a model where filter rate genuinely differs (e.g., a base model, 
 
 ## Anchor selection rationale
 
-The four anchor-pair axes (`v_benevolence`, `v_authority`, `v_humor`, `v_critic`) were finalized in the parent project after iteration. Two earlier candidates were tested and dropped:
+The four anchor-pair axes (`v_benevolence`, `v_authority`, `v_humor`, `v_critic`) were finalized after iteration. Two earlier candidates were tested and dropped:
 
 - `v_humanness` — non-human pole (vampire, undead, etc.) spanned three incompatible sub-clusters (liminal-undead, fantasy-mythic, transformative); no coherent semantic meaning. Dropped.
 - `v_collective` — anchors (virus, zeitgeist, vampire, etc.) cross-loaded heavily on other axes; bio-network vs cosmic confound. Dropped.
@@ -160,4 +160,4 @@ To explore alternatives, copy the relevant config and override via env var. Don'
 - **Park, Choe, Veitch** (2024). *The Linear Representation Hypothesis.* ICML 2024. arXiv:2311.03658.
 - **Chen, Arditi, Sleight, Evans, Lindsey** (2025). *Persona Vectors: Monitoring and Controlling Character Traits.* arXiv:2507.21509.
 - Upstream library: [github.com/safety-research/assistant-axis](https://github.com/safety-research/assistant-axis).
-- Pre-computed vectors (parent project, partial): [huggingface.co/datasets/pandaman007/assistant-axis-abliteration-vectors](https://huggingface.co/datasets/pandaman007/assistant-axis-abliteration-vectors).
+- Pre-computed artifacts (this repo): [huggingface.co/datasets/pandaman007/persona-space-comparison](https://huggingface.co/datasets/pandaman007/persona-space-comparison).

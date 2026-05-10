@@ -4,7 +4,7 @@ Rationale for the positive/negative archetypes that define each contrast axis. A
 
 ## Existing 4 axes (kept)
 
-- `v_benevolence`, `v_authority`, `v_humor`, `v_critic` — locked from parent project. 64 anchors.
+- `v_benevolence`, `v_authority`, `v_humor`, `v_critic` — pre-registered. 64 anchors.
 
 ## Candidates considered
 
