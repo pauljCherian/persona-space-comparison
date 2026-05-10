@@ -97,9 +97,35 @@ print(f"Wrote {n} unfiltered role vectors → {out_dir}")
 PYEOF
 
 echo "=== Step 4/5: Compute Lu-style assistant axis ==="
-"$PYTHON" "$PIPELINE_DIR/5_axis.py" \
-    --vectors_dir "$OUTPUT/vectors" \
-    --output "$OUTPUT/axis.pt"
+# Inline (instead of upstream 5_axis.py) because upstream classifies vectors
+# by the saved 'type' field: type='mean' → default, type='pos_3' → role.
+# Our Step 3 saves every role with type='mean' (no judge → no pos_3 vectors),
+# so upstream sees 276 defaults and 0 roles and errors out. We instead key off
+# the literal role name 'default' to separate the two pools.
+"$PYTHON" - "$OUTPUT/vectors" "$OUTPUT/axis.pt" <<'PYEOF'
+import sys
+import torch
+from pathlib import Path
+
+vec_dir, out_path = Path(sys.argv[1]), Path(sys.argv[2])
+default_vec = None
+role_vecs = []
+for vf in sorted(vec_dir.glob("*.pt")):
+    data = torch.load(vf, map_location="cpu", weights_only=False)
+    v = data["vector"] if isinstance(data, dict) else data
+    v = v.squeeze() if v.ndim > 1 else v
+    if vf.stem == "default":
+        default_vec = v
+    else:
+        role_vecs.append(v)
+if default_vec is None:
+    sys.exit("FATAL: no vectors/default.pt found")
+if not role_vecs:
+    sys.exit("FATAL: no role vectors found")
+axis = default_vec - torch.stack(role_vecs).mean(dim=0)
+torch.save(axis, out_path)
+print(f"Wrote axis {tuple(axis.shape)}, norm={axis.norm().item():.4f}, n_roles={len(role_vecs)} → {out_path}")
+PYEOF
 
 echo "=== Step 5/5: Save default activation vector ==="
 "$PYTHON" - "$OUTPUT/activations/default.pt" "$OUTPUT/default.pt" <<'PYEOF'
